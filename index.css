@@ -2522,26 +2522,67 @@ small {
 
   .nav-hamburger {
     display: flex;
+    z-index: 1100;
+  }
+
+  .nav-hamburger span {
+    height: 2px;
+    background: var(--text-primary);
   }
 
   .hero {
     padding: 140px 0 80px;
   }
 
+  .hero::before {
+    width: 100%;
+  }
+
   .hero-headline {
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .hero-sub {
     font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-diagram-wrapper {
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+
+  .hero-diagram {
+    max-width: 100% !important;
   }
 
   .problem-grid {
     grid-template-columns: 1fr;
   }
 
+  .problem-card {
+    text-align: center;
+  }
+
+  .problem-card-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .security-grid {
     grid-template-columns: 1fr;
+  }
+
+  .security-card {
+    text-align: center;
+  }
+
+  .security-card-header {
+    flex-direction: column;
+    align-items: center;
   }
 
   .video-grid {
@@ -2586,5 +2627,70 @@ small {
 
   .sticky-cta {
     display: none !important;
+  }
+
+  .final-cta::before {
+    width: 100%;
+  }
+
+  /* --- Mobile Alignment Additions --- */
+  .solution-content {
+    text-align: center;
+  }
+
+  .feature-item {
+    text-align: left; /* Keep left aligned to avoid icon disconnect, or center the whole thing */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .core-card {
+    text-align: center;
+  }
+
+  .core-card-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .core-chips {
+    justify-content: center;
+  }
+
+  .causal-point {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-card {
+    text-align: center;
+  }
+
+  .testimonial-author {
+    justify-content: center;
+  }
+
+  .pricing-card {
+    text-align: center;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-brand-logo {
+    justify-content: center;
+  }
+
+  .agency-brain {
+    min-height: 280px;
+    padding: 20px;
+  }
+
+  .brain-node {
+    --dx: 0px !important;
+    --dy: 0px !important;
   }
 }
