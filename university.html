@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowthOS University — Free Agency Growth Training</title>
+    <meta name="description"
+        content="Free video courses and playbooks for marketing agency owners. Learn AI, attribution, pricing, and operations from practitioners." />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <div id="reading-progress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                GrowthOS
+            </a>
+            <div class="nav-menu">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#solution">Solution</a>
+                <a href="university.html">University</a>
+                <a href="blog.html">Resources</a>
+                <a href="waitlist.html">Pricing</a>
+            </div>
+            <div class="nav-cta">
+                <a href="waitlist.html" class="btn btn-ghost">Get started</a>
+            </div>
+            <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="nav-mobile" id="nav-mobile">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Resources</a>
+        <a href="waitlist.html">Pricing</a>
+        <a href="waitlist.html" class="btn btn-primary">Join waitlist</a>
+    </div>
+
+    <!-- University Hero -->
+    <div class="university-hero">
+        <div class="container">
+            <div data-animate>
+                <span class="eyebrow">GrowthOS University</span>
+                <h1 style="font-size:clamp(32px,4vw,52px);margin-bottom:16px;">Learn from the best.<br><span
+                        style="opacity:0.5;">For free.</span></h1>
+                <p style="max-width:520px;margin:0 auto;">Practical video courses, playbooks, and frameworks built for
+                    agency owners who want to scale — not just survive.</p>
+                <div class="search-bar" style="max-width:440px;margin:28px auto 0;">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" />
+                        <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <input type="search" placeholder="Search courses, topics, playbooks…" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <section style="padding:0 0 0;background:var(--bg-primary);border-bottom:1px solid var(--border);">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="ai">AI & Automation</button>
+                <button class="category-tab" data-category="attribution">Attribution</button>
+                <button class="category-tab" data-category="operations">Operations</button>
+                <button class="category-tab" data-category="pricing">Pricing & Sales</button>
+                <button class="category-tab" data-category="retention">Client Retention</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Grid -->
+    <section style="padding:48px 0 120px;background:var(--bg-primary);">
+        <div class="container">
+            <div class="video-grid">
+
+                <div class="video-card" data-category="ai" data-animate>
+                    <div class="video-thumbnail" style="background:linear-gradient(135deg,#06B6D420,#06B6D410);">
+                        🤖
+                        <div class="video-play">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-category">AI & Automation</span>
+                            <span class="video-duration">42 min</span>
+                        </div>
+                        <h3>Building an AI-Native Agency Stack</h3>
+                        <p>From prompt engineering to workflow automation — the exact tools and systems we use at
+                            8-figure agencies.</p>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="attribution" data-animate data-delay="100">
+                    <div class="video-thumbnail" style="background:linear-gradient(135deg,#3B82F620,#3B82F610);">
+                        📊
+                        <div class="video-play">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-category">Attribution</span>
+                            <span class="video-duration">38 min</span>
+                        </div>
+                        <h3>Causal Attribution Without the PhD</h3>
+                        <p>How to run geo holdout tests, present incrementality to clients, and price your attribution
+                            capability.</p>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="pricing" data-animate data-delay="200">
+                    <div class="video-thumbnail" style="background:linear-gradient(135deg,#10D16420,#10D16410);">
+                        💰
+                        <div class="video-play">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-category">Pricing & Sales</span>
+                            <span class="video-duration">55 min</span>
+                        </div>
+                        <h3>Value-Based Pricing for Agencies</h3>
+                        <p>Stop leaving money on the table. How to price on outcomes, not hours, and actually get
+                            clients to say yes.</p>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="operations" data-animate>
+                    <div class="video-thumbnail" style="background:linear-gradient(135deg,#F59E0B20,#F59E0B10);">
+                        ⚙️
+                        <div class="video-play">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-category">Operations</span>
+                            <span class="video-duration">29 min</span>
+                        </div>
+                        <h3>The Agency Operating System</h3>
+                        <p>Standard operating procedures, team scorecards, and QA processes that let you step back from
+                            the business.</p>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="retention" data-animate data-delay="100">
+                    <div class="video-thumbnail" style="background:linear-gradient(135deg,#8B5CF620,#8B5CF610);">
+                        🤝
+                        <div class="video-play">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-category">Client Retention</span>
+                            <span class="video-duration">44 min</span>
+                        </div>
+                        <h3>The 90-Day Client Success Playbook</h3>
+                        <p>How to onboard, deliver early wins, and set the relationship dynamic that leads to 3+ year
+                            engagements.</p>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="ai" data-animate data-delay="200">
+                    <div class="video-thumbnail" style="background:linear-gradient(135deg,#06B6D420,#3B82F620);">
+                        🔮
+                        <div class="video-play">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">
+                            <span class="video-category">AI & Automation</span>
+                            <span class="video-duration">61 min</span>
+                        </div>
+                        <h3>AI-written Reports Clients Actually Read</h3>
+                        <p>The prompt architecture and workflow that generates narrative-quality client reports in under
+                            3 minutes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="newsletter" data-animate>
+                <span class="eyebrow">Free playbooks</span>
+                <h2>Get the Agency Growth Digest</h2>
+                <p>Weekly tactics from practitioners running 7 and 8-figure agencies. No theory. Just what works.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="your@agency.com" required />
+                    <button type="submit" class="btn btn-primary">Subscribe free</button>
+                </form>
+                <div class="newsletter-success" id="newsletter-success">✓ You're subscribed. First issue lands Monday.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <a href="index.html" class="nav-logo" style="text-decoration:none;">
+                    <div class="nav-logo-icon" style="width:26px;height:26px;">
+                        <svg width="13" height="13" fill="none" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    GrowthOS
+                </a>
+                <p class="footer-copy">© 2025 GrowthOS Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
